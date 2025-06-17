@@ -15,7 +15,7 @@ def create_connection():
             password='12345',
             database='police_log',
             port=3306,
-            cursorclass=DictCursor
+            cursorclass=pymysql.cursors.DictCursor
         )
         return connection
     except Exception as e:
