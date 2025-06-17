@@ -14,7 +14,7 @@ def create_connection():
             user='root',
             password='12345',
             db='police_log',
-            port=3306,
+            port=3307,
             cursorclass=DictCursor
         )
         return connection
