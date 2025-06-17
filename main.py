@@ -10,7 +10,7 @@ import numpy as np
 def create_connection():
     try:
         connection = pymysql.connect(
-            host='127.0.0.1',
+            host='localhost',
             user='root',
             password='12345',
             db='police_log',
