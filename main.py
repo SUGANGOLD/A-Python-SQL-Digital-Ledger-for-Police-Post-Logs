@@ -10,12 +10,11 @@ import numpy as np
 def create_connection():
     try:
         connection = pymysql.connect(
-            host='192.168.109.51',
+            host='127.0.0.1',
             user='root',
             password='12345',
             database='police_log',
             port=3306,
-            connect_timeout=10,
             cursorclass=DictCursor
         )
         return connection
